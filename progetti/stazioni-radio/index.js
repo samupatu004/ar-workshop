@@ -284,7 +284,7 @@ function renderModel(place, latitude, longitude, scene) {
     const entity = document.createElement('a-entity');
     entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
     entity.setAttribute('look-at', '[gps-camera]');
-    entity.setAttribute('scale', '20 20 20');
+    entity.setAttribute('scale', '40 40 40');
     entity.setAttribute('id', place.id);
 
     const markerEl = document.createElement('a-image');
