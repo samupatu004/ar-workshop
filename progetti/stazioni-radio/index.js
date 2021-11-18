@@ -284,7 +284,7 @@ function renderModel(place, latitude, longitude, scene) {
     const entity = document.createElement('a-entity');
     entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
     entity.setAttribute('look-at', '[gps-camera]');
-    entity.setAttribute('scale', '40 40 40');
+    entity.setAttribute('scale', '10 10 10');
     entity.setAttribute('id', place.id);
 
     const markerEl = document.createElement('a-image');
@@ -304,11 +304,19 @@ function renderModel(place, latitude, longitude, scene) {
         width: 4,
     });
 
+    const buttonEl = document.createElement('button');
+
+    buttonEl.setAttribute('type', 'button');
+    buttonEl.setAttribute('value','Get PDF');
+
+    entity.appendChild(buttonEl);
+
     textEl.setAttribute('position', '0 -0.75 0');
     entity.appendChild(textEl);
     scene.appendChild(entity);
 
     return entity;
+
 }
 
 window.addEventListener('load', () => {
