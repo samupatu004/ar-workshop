@@ -6,6 +6,8 @@ const MIN_DISTANCE = 50;
 const MAX_NUMBER_MARKERS = 10;   // not limiting, for now
 const TIME_TO_UPDATE = 30;    // in seconds
 
+var closestEntity;
+
 // Calculate distance between two positions (with latitude and longitude fields)
 function computeDistance(position1, position2) {
     var dlongitude = THREE.Math.degToRad(parseFloat(position1.longitude) - parseFloat(position2.longitude));
