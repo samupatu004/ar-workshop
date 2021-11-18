@@ -306,6 +306,7 @@ function renderModel(place, latitude, longitude, scene) {
 
     const buttonEl = document.createElement('button');
 
+    buttonEl.setAttribute('position', '0 -2 0')
     buttonEl.setAttribute('type', 'button');
     buttonEl.setAttribute('value','Get PDF');
 
