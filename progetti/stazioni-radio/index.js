@@ -6,8 +6,6 @@ const MIN_DISTANCE = 50;
 const MAX_NUMBER_MARKERS = 10;   // not limiting, for now
 const TIME_TO_UPDATE = 30;    // in seconds
 
-var closestEntity;
-
 // Calculate distance between two positions (with latitude and longitude fields)
 function computeDistance(position1, position2) {
     var dlongitude = THREE.Math.degToRad(parseFloat(position1.longitude) - parseFloat(position2.longitude));
@@ -294,7 +292,7 @@ function renderModel(place, latitude, longitude, scene) {
     // if needed
     // chooseColoredMarker(markerEl);
 
-    markerEl.setAttribute('src', 'marker.png');
+    markerEl.setAttribute('src', './assets/marker.png');
 
     entity.appendChild(markerEl);
 
@@ -306,20 +304,11 @@ function renderModel(place, latitude, longitude, scene) {
         width: 4,
     });
 
-    const buttonEl = document.createElement('button');
-
-    buttonEl.setAttribute('position', '0 -2 0')
-    buttonEl.setAttribute('type', 'button');
-    buttonEl.setAttribute('value','Get PDF');
-
-    entity.appendChild(buttonEl);
-
     textEl.setAttribute('position', '0 -0.75 0');
     entity.appendChild(textEl);
     scene.appendChild(entity);
 
     return entity;
-
 }
 
 window.addEventListener('load', () => {
@@ -328,6 +317,7 @@ window.addEventListener('load', () => {
         camera.setAttribute('gps-camera', 'simulateLatitude', latitude);
         camera.setAttribute('gps-camera', 'simulateLongitude', longitude);
         window.currentPosition = { latitude, longitude };
+        camera.update();
         const places = findClosestPlaces(window.currentPosition, window.places, MAX_NUMBER_MARKERS);
         renderPlaces(places);
         setClosestPlaceOnFooter();
