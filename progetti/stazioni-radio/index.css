@@ -115,6 +115,7 @@ button {
     color:black;
     background-color: white;
     padding: 14px 28px;
+    display:none;
 }
 
 .footer .salaborsa-logo {
