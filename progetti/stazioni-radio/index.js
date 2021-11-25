@@ -292,7 +292,7 @@ function renderModel(place, latitude, longitude, scene) {
     // if needed
     // chooseColoredMarker(markerEl);
 
-    markerEl.setAttribute('src', './assets/marker.png');
+    markerEl.setAttribute('src', 'marker.png');
 
     entity.appendChild(markerEl);
 
