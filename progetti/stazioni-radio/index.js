@@ -3,6 +3,8 @@
 // inoltre dovrebbe essere sempre uguale o maggiore della minima distanza fra due diversi posti
 const MIN_DISTANCE = 50;
 
+var closestEntity = null;
+var entitiesAdded = null;
 const MAX_NUMBER_MARKERS = 10;   // not limiting, for now
 const TIME_TO_UPDATE = 30;    // in seconds
 
