@@ -106,7 +106,15 @@ button {
     left: 0;
     background-color: white;
     border-top: 5px;
+    border-top-style: solid;
     border-top-color: #FCAE1E;
+}
+.pdf_opener {
+    flex:auto;
+    border:none;
+    color:black;
+    background-color: white;
+    padding: 14px 28px;
 }
 
 .footer .salaborsa-logo {
@@ -117,7 +125,6 @@ button {
 .footer-container {
     flex: auto;
     padding: 0.5em 0;
-    margin-right: 0;
 }
 
 .footer-place-title {
