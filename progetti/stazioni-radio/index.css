@@ -105,6 +105,8 @@ button {
     bottom: 0;
     left: 0;
     background-color: white;
+    border-top: 5px;
+    border-top-color: #FCAE1E;
 }
 
 .footer .salaborsa-logo {
