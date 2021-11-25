@@ -104,7 +104,10 @@ window.onload = () => {
         }
     });
 };
-
+function openPdf() {
+    var pidieffe="./data/"+link;
+    window.open(pidieffe,"resizable","scrollbar")
+}
 function closePanel() {
     // if already opened, hide panel
     window.openPanel = false;
