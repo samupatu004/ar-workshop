@@ -6,6 +6,7 @@
 
 * {
     user-select: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -112,10 +113,11 @@ button {
 .pdf_opener {
     flex:auto;
     border:none;
-    color:black;
-    background-color: white;
-    padding: 14px 28px;
+    color:white;
+    background-color: #FCAE1E;
+    padding: 14px 10px;
     display:none;
+    border-radius: 5px;
 }
 
 .footer .salaborsa-logo {
