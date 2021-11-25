@@ -104,10 +104,12 @@ window.onload = () => {
         }
     });
 };
+
 function openPdf() {
-    var pidieffe="./data/"+link;
-    window.open(pidieffe,"resizable","scrollbar")
+    var pidieffe = `./data/${window.closestPlace.link}`;
+    window.open(pidieffe);
 }
+
 function closePanel() {
     // if already opened, hide panel
     window.openPanel = false;
@@ -180,7 +182,7 @@ function handleNearObject(entity, distance) {
         if (distance < MIN_DISTANCE) {
             // TODO mostrare qualcosa
             console.log('ce un luogo molto vicino, < N');
-
+            document.getDocumentById('open_pdf').style.display('block');
             // settiamo l'entity più vicina, che verrà rimossa quando la stessa entity sarà
             // ad una distanza >  MIN_DISTANCE
             closestEntity = entity;
@@ -200,7 +202,7 @@ function handleNearObject(entity, distance) {
         // c'è già, è quella corrente ma ora si trova più distante di MIN_DISTANCE
         if (closestEntity === entity && distance >= MIN_DISTANCE) {
             // TODO rimuovo quello attuale
-
+            document.getDocumentById('open_pdf').style.display('none');
             closestEntity = null;
         }
     }
