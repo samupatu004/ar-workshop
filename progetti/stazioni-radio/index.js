@@ -322,7 +322,7 @@ window.addEventListener('load', () => {
         camera.setAttribute('gps-camera', 'simulateLatitude', latitude);
         camera.setAttribute('gps-camera', 'simulateLongitude', longitude);
         window.currentPosition = { latitude, longitude };
-        camera.update();
+        camera.components['gps-camera'].update();
         const places = findClosestPlaces(window.currentPosition, window.places, MAX_NUMBER_MARKERS);
         renderPlaces(places);
         setClosestPlaceOnFooter();
