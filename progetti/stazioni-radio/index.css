@@ -171,17 +171,23 @@ button {
 
 .indexLogo {
     background-color: white;
+    border: 3px solid #FCAE1E;
     display: flex;
     margin-top: 5vh;
     margin-bottom: 7vh;
     width: 50%;
-    margin-left: auto;
-    margin-right: 2vw;
+    margin-left: 1.1vw;
     border-radius: 8px;
+}
+
+.indexTitle {
+    font-size: 3em;
+    color: #FCAE1E;
 }
 
 .indexText {
     background-color: white;
+    border: 3px solid #FCAE1E;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -191,8 +197,8 @@ button {
 }
 
 .indexButton {
+    border: 3px solid #FCAE1E;
     display: flex;
-    border: none;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
@@ -203,4 +209,23 @@ button {
     font-size: 2.7em;
     align-items: center;
     justify-content: center;
+}
+
+.indexButton:after {
+  content: "";
+  background: #FCAE1E;
+  display: flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  height: 9vh;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.indexButton:active:after {
+  opacity: 1;
+  transition: 0s
 }
