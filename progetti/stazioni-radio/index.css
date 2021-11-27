@@ -174,10 +174,9 @@ button {
     display: flex;
     margin-top: 5vh;
     margin-bottom: 7vh;
-    width: 60vw;
+    width: 50%;
     margin-left: auto;
     margin-right: 2vw;
-    height: 10vh;
     border-radius: 8px;
 }
 
