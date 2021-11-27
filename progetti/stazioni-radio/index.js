@@ -5,7 +5,6 @@ const MIN_DISTANCE = 50;
 
 var closestEntity = null;
 var entitiesAdded = null;
-var pidieffe = `./data/${window.closestPlace.link}`;
 
 const MAX_NUMBER_MARKERS = 10;   // not limiting, for now
 const TIME_TO_UPDATE = 30;    // in seconds
@@ -97,6 +96,7 @@ window.onload = () => {
         });
     // open pdf when button open-pdf is clicked
     document.querySelector('.pdf_opener').addEventListener('click', function() {
+        var pidieffe = `./data/${window.closestPlace.link}`;
         window.open(pidieffe);
     });
 
