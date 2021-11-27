@@ -62,6 +62,10 @@ window.onload = () => {
     window.detailTitle = document.querySelector('.detail-title');
     window.detailDistanceElem = document.querySelector('.detail-distance');
     window.detailAddressElem = document.querySelector('.detail-address');
+    window.detailDistanceElem = document.querySelector('.detail-distance');
+    window.detailAddressElem = document.querySelector('.detail-address');
+    window.detailDistanceElem = document.querySelector('.detail-distance');
+    window.detailAddressElem = document.querySelector('.detail-address');
     window.moreDetailsLink = document.querySelector('.more-details');
 
     // every TIME_TO_UPDATE seconds, fetch other markers
