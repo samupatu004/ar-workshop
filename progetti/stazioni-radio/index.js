@@ -1,6 +1,7 @@
 // per funzionare al meglio, questa MIN_DISTANCE dovrebbe essere la stessa specificata
 // nel file HTML in gps-camera: minDistance.
 // inoltre dovrebbe essere sempre uguale o maggiore della minima distanza fra due diversi posti
+//il javascript non si aggiorna, questa riga serve solo per farsì che si aggiorni aiuto
 const MIN_DISTANCE = 50;
 
 var closestEntity = null;
