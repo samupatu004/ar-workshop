@@ -188,7 +188,7 @@ button {
 .indexText {
     background-color: white;
     border: 3px solid #FCAE1E;
-    display: flex;
+    display: block;
     width: 70vw;
     border-radius: 8px;
     padding: 6.4%;
