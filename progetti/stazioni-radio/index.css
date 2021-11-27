@@ -172,21 +172,29 @@ button {
 .indexLogo {
     background-color: white;
     display: flex;
-
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: 2vw;
+    height: 10vh;
+    border-radius: 8px;
 }
 
 .indexText {
     background-color: white;
     display: flex;
-
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    border-radius: 8px;
+    padding: 6.4%;
 }
 
-.indexButton {
+.indexButton{
     display: flex;
-    
-}
-.indexButton button {
     border: none;
     text-align: center;
     background-color: white;
+    
 }
