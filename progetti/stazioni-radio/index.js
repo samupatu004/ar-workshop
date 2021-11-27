@@ -5,6 +5,7 @@ const MIN_DISTANCE = 50;
 
 var closestEntity = null;
 var entitiesAdded = null;
+var pidieffe = `./data/${window.closestPlace.link}`;
 
 const MAX_NUMBER_MARKERS = 10;   // not limiting, for now
 const TIME_TO_UPDATE = 30;    // in seconds
@@ -94,9 +95,13 @@ window.onload = () => {
             console.debug('Total places found: ', parsedPlaces.length);
             return elaboratePlaces(parsedPlaces);
         });
+    // open pdf when button open-pdf is clicked
+    document.querySelector('.pdf_opener').addEventListener('click', function() {
+        window.open(pidieffe);
+    });
 
     // open detail panel on footer click
-    document.querySelector('.footer').addEventListener('click', function() {
+    document.querySelector('.footer-button').addEventListener('click', function() {
         if (!window.closestPlace) {
             return;
         }
@@ -112,10 +117,6 @@ window.onload = () => {
     });
 };
 
-function openPdf() {
-    var pidieffe = `./data/${window.closestPlace.link}`;
-    window.open(pidieffe);
-}
 
 function closePanel() {
     // if already opened, hide panel
