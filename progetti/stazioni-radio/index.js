@@ -181,13 +181,13 @@ function elaboratePlaces(places) {
 }
 
 function handleNearObject(entity, distance) {
-    var bottone = document.querySelector('pdf_opener');
+    var bottone = document.getElementsByClass('pdf_opener');
     // se non c'è già una entity sotto MIN_DISTANCE...
     if (!closestEntity) {
         if (distance < MIN_DISTANCE) {
             // TODO mostrare qualcosa
             console.log('ce un luogo molto vicino, < N');
-            bottone.setAttribute('display','block');
+            bottone.style='display','block';
             // settiamo l'entity più vicina, che verrà rimossa quando la stessa entity sarà
             // ad una distanza >  MIN_DISTANCE
             closestEntity = entity;
@@ -207,7 +207,7 @@ function handleNearObject(entity, distance) {
         // c'è già, è quella corrente ma ora si trova più distante di MIN_DISTANCE
         if (closestEntity === entity && distance >= MIN_DISTANCE) {
             // TODO rimuovo quello attuale
-            bottone.setAttribute('display','none');
+            bottone.setAttribute='display','none';
             closestEntity = null;
         }
     }
