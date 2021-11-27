@@ -309,7 +309,7 @@ function renderModel(place, latitude, longitude, scene) {
     // add text for distance in meters
     const textEl = document.createElement('a-entity');
     textEl.setAttribute('text', {
-        color: '#01afe3',
+        color: '#FCAE1E',
         align: 'center',
         width: 4,
     });
