@@ -174,7 +174,7 @@ button {
     border: 3px solid #FCAE1E;
     display: flex;
     margin-top: 5vh;
-    margin-bottom: 7vh;
+    margin-bottom: 5vh;
     width: 50%;
     margin-left: 1.1vw;
     border-radius: 8px;
@@ -201,7 +201,7 @@ button {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
     border-radius: 8px;
     background-color: white;
     width: 40vw;
