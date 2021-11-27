@@ -172,8 +172,8 @@ button {
 .indexLogo {
     background-color: white;
     display: flex;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
     width: 60vw;
     margin-left: auto;
     margin-right: 2vw;
@@ -191,10 +191,19 @@ button {
     padding: 6.4%;
 }
 
-.indexButton{
+.indexButton {
     display: flex;
     border: none;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    border-radius: 8px;
     background-color: white;
-    
+    width: 40vw;
+    height: 9vh;
+    font-size: 2.7em;
 }
