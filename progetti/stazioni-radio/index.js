@@ -208,6 +208,7 @@ function handleNearObject(entity, distance) {
         if (closestEntity === entity && distance >= MIN_DISTANCE) {
             // TODO rimuovo quello attuale
             button.style.display = "none";
+            console.log("ti prego funziona");
             closestEntity = null;
         }
     }
