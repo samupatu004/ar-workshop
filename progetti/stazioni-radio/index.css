@@ -169,14 +169,24 @@ button {
     text-align: center;
 }
 
-.indexDiv {
+.indexLogo {
+    background-color: white;
+    display: flex;
+
+}
+
+.indexText {
     background-color: white;
     display: flex;
 
 }
 
 .indexButton {
+    display: flex;
+    
+}
+.indexButton button {
     border: none;
     text-align: center;
-    
+    background-color: white;
 }
