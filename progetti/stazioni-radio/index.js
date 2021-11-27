@@ -181,7 +181,7 @@ function elaboratePlaces(places) {
 }
 
 function handleNearObject(entity, distance) {
-    var bottone = document.querySelector('pdf_opener');
+    var bottone = document.getElementsByClassName('pdf_opener').style;
     // se non c'è già una entity sotto MIN_DISTANCE...
     if (!closestEntity) {
         if (distance < MIN_DISTANCE) {
