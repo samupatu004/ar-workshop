@@ -185,7 +185,7 @@ function handleNearObject(entity, distance) {
         if (distance < MIN_DISTANCE) {
             // TODO mostrare qualcosa
             console.log('ce un luogo molto vicino, < N');
-            document.querySelector('pdf_opener').style.display('block');
+            document.querySelector('pdf_opener').setAttribute('display','block');
             // settiamo l'entity più vicina, che verrà rimossa quando la stessa entity sarà
             // ad una distanza >  MIN_DISTANCE
             closestEntity = entity;
@@ -205,7 +205,7 @@ function handleNearObject(entity, distance) {
         // c'è già, è quella corrente ma ora si trova più distante di MIN_DISTANCE
         if (closestEntity === entity && distance >= MIN_DISTANCE) {
             // TODO rimuovo quello attuale
-            document.querySelector('pdf_opener').style.display('none');
+            document.querySelector('pdf_opener').setAttribute('display','none');
             closestEntity = null;
         }
     }
