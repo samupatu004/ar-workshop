@@ -205,7 +205,7 @@ function handleNearObject(entity, distance) {
         // c'è già, è quella corrente ma ora si trova più distante di MIN_DISTANCE
         if (closestEntity === entity && distance >= MIN_DISTANCE) {
             // TODO rimuovo quello attuale
-            document.getDocumentById('open_pdf').style.display('none');
+            document.getElementsByClass('pdf_opener').style.display('none');
             closestEntity = null;
         }
     }
