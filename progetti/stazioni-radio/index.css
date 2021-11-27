@@ -168,3 +168,15 @@ button {
     padding: 1rem;
     text-align: center;
 }
+
+.indexDiv {
+    background-color: white;
+    display: flex;
+
+}
+
+.indexButton {
+    border: none;
+    text-align: center;
+    
+}
