@@ -31,11 +31,7 @@ button {
   flex-direction: column;
 }
 
-.loading-text {
-    background-color: white;
-}
-
-.loading-text div {
+.loading-text{
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -60,7 +56,6 @@ button {
 .loading-text:nth-child(4) {
     animation-delay: 0.8;
 }
-
 
 @keyframes scaling {
   0%, 100%{
