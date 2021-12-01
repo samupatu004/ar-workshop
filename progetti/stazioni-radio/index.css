@@ -1,6 +1,6 @@
 :root {
     --color-light-grey: rgba(0, 0, 0, 0.16);
-    --color-blue: #FCAE1E;
+    --color-orange: #FCAE1E;
     --color-dark-grey: #444444;
 }
 
@@ -35,7 +35,7 @@ button {
     width: 40px;
     height: 40px;
     display: inline-block;
-    background-color: #FCAE1E;
+    background-color: var(--color-orange);
     border-radius: 50%;
     margin: 0.4rem;
     animation-name: scaling;
@@ -80,12 +80,13 @@ button {
     display: flex;
     flex-direction: column;
     padding: 0 1.5em;
-    height: 85%;
+    height: 170px;
     transform: translateY(100%);
     display: flex;
     flex-direction: column;
     transition: transform 300ms ease-out;
-    width: 40%;
+    border-top: 5px solid var(--color-orange);
+    border-right: 5px solid var(--color-orange);
 }
 
 .detail-panel.opened {
@@ -108,7 +109,7 @@ button {
 }
 
 .detail-distance {
-    color: var(--color-blue);
+    color: var(--color-orange);
 }
 
 .detail-description {
@@ -120,8 +121,8 @@ button {
 
 .more-details {
     text-decoration: none;
-    color: var(--color-blue);
-    border: 1px solid var(--color-blue);
+    color: var(--color-orange);
+    border: 1px solid var(--color-orange);
     border-radius: 4px;
     margin-top: 1em;
     padding: 0.5em;
@@ -140,7 +141,7 @@ button {
     background-color: white;
     border-top: 5px;
     border-top-style: solid;
-    border-top-color: #FCAE1E;
+    border-top-color: var(--color-orange);
 }
 .pdf_opener {
     display:flex;
@@ -149,7 +150,7 @@ button {
     flex:auto;
     border:none;
     color:white;
-    background-color: #FCAE1E;
+    background-color: var(--color-orange);
     padding: 14px 10px;
     display:none;
     border-radius: 5px;
@@ -179,7 +180,7 @@ button {
 }
 
 .footer-place-distance {
-    color: var(--color-blue);
+    color: var(--color-orange);
 }
 
 .footer-button {
@@ -205,7 +206,7 @@ button {
 
 .indexLogo {
     background-color: white;
-    border: 3px solid #FCAE1E;
+    border: 3px solid var(--color-orange);
     display: flex;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -217,12 +218,12 @@ button {
 
 .indexTitle {
     font-size: 3em;
-    color: #FCAE1E;
+    color: var(--color-orange);
 }
 
 .indexText {
     background-color: white;
-    border: 3px solid #FCAE1E;
+    border: 3px solid var(--color-orange);
     display: block;
     width: 80vw;
     border-radius: 8px;
@@ -232,7 +233,7 @@ button {
 }
 
 .indexButton {
-    border: 3px solid #FCAE1E;
+    border: 3px solid var(--color-orange);
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -248,7 +249,7 @@ button {
 
 .indexButton:after {
   content: "";
-  background: #FCAE1E;
+  background: var(--color-orange);
   display: flex;
   position: absolute;
   margin-left: auto;
