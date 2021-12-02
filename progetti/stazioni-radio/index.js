@@ -103,6 +103,7 @@ window.onload = () => {
 
         // show panel if not already opened
         if (!window.openPanel) {
+            document.querySelector(".footer-button").style.transform = "rotate(180deg)";
             window.openPanel = true;
             window.panel.classList.add('opened');
             updatePanelData();
@@ -115,6 +116,7 @@ window.onload = () => {
 
 function closePanel() {
     // if already opened, hide panel
+    document.querySelector(".footer-button").style.transform = "rotate(0deg)";
     window.openPanel = false;
     window.panel.classList.remove('opened');
 
