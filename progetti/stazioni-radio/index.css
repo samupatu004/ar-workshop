@@ -205,8 +205,8 @@ button {
 }
 
 .indexLogo {
-    background-color: white;
-    border: 3px solid var(--color-orange);
+    background-color: var(--color-orange);
+    border: none;
     display: flex;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -223,7 +223,7 @@ button {
 
 .indexText {
     background-color: white;
-    border: 3px solid var(--color-orange);
+    border: none;
     display: block;
     width: 80vw;
     border-radius: 8px;
@@ -233,7 +233,8 @@ button {
 }
 
 .indexButton {
-    border: 3px solid var(--color-orange);
+    color: var(--color-orange);
+    border: none;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -249,7 +250,7 @@ button {
 
 .indexButton:after {
   content: "";
-  background: var(--color-orange);
+  background: black;
   display: flex;
   position: absolute;
   margin-left: auto;
