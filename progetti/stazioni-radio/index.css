@@ -256,7 +256,7 @@ button {
 
 .indexButton:after {
   content: "";
-  background: black;
+  background-color: var(--color-orange);
   display: flex;
   position: absolute;
   margin-left: auto;
