@@ -22,7 +22,6 @@ function computeDistance(position1, position2) {
     if (distance < 0) {
         distance = distance * -1;
     }
-
     return distance.toFixed(0);
 }
 
@@ -104,7 +103,6 @@ window.onload = () => {
 
         // show panel if not already opened
         if (!window.openPanel) {
-            document.querySelector(".footer-button").style.transform = "rotate(180deg)";
             window.openPanel = true;
             window.panel.classList.add('opened');
             updatePanelData();
@@ -117,7 +115,6 @@ window.onload = () => {
 
 function closePanel() {
     // if already opened, hide panel
-    document.querySelector(".footer-button").style.transform = "rotate(0deg)";
     window.openPanel = false;
     window.panel.classList.remove('opened');
 
@@ -301,7 +298,6 @@ function renderModel(place, latitude, longitude, scene) {
     entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
     entity.setAttribute('look-at', '[gps-camera]');
     entity.setAttribute('scale', '20 20 20');
-    entity.setAttribute('indirizzo', place.indirizzo);
     entity.setAttribute('id', place.id);
 
     const markerEl = document.createElement('a-image');
