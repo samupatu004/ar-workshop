@@ -127,10 +127,13 @@ function closePanel() {
 }
 
 function updatePanelData() {
-    window.descriptionElem.innerText = window.closestPlace && (window.closestPlace.note || '');
-    window.detailTitle.innerText = window.closestPlace && (window.closestPlace.denom || '');
-    window.detailDistanceElem.innerText = window.closestPlace && (window.closestPlace.distanceMsg || '');
-    window.detailAddressElem.innerText = window.closestPlace && (window.closestPlace.indirizzo || '');
+    const places = [...document.querySelectorAll('[gps-entity-place]')];
+    const rows = [...document.querySelectorAll('.detail-panel .detail-more')];
+
+    for (let i = 0; i < places.length; i++) {
+        rows[i].querySelector('.detail-address').innerText = places[i].getAttribute('indirizzo');
+        rows[i].querySelector('.detail-distance').innerText = places[i].getAttribute('distanceMsg');
+    }
 }
 
 function elaboratePlaces(places) {
