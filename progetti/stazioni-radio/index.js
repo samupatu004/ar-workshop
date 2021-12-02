@@ -132,8 +132,13 @@ function updatePanelData() {
     const rows = [...document.querySelectorAll('.detail-panel .detail-more')];
 
     for (let i = 0; i < places.length; i++) {
-        rows[i].querySelector('.detail-address').innerText = places[i].getAttribute('indirizzo');
-        rows[i].querySelector('.detail-distance').innerText = places[i].getAttribute('distanceMsg');
+        if (places[i].getAttribute('indirizzo')) {
+            rows[i].querySelector('.detail-address').innerText = places[i].getAttribute('indirizzo');
+        }
+        if (places[i].getAttribute('distanceMsg')) {
+            rows[i].querySelector('.detail-distance').innerText = places[i].getAttribute('distanceMsg');
+        }
+        
     }
 }
 
@@ -301,6 +306,7 @@ function renderModel(place, latitude, longitude, scene) {
     entity.setAttribute('look-at', '[gps-camera]');
     entity.setAttribute('scale', '20 20 20');
     entity.setAttribute('id', place.id);
+    entity.setAttribute('indirizzo', place.indirizzo);
 
     const markerEl = document.createElement('a-image');
 
