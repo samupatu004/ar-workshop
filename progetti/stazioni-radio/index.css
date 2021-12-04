@@ -86,7 +86,6 @@ button {
     flex-direction: column;
     transition: transform 300ms ease-out;
     border-top: 5px solid var(--color-orange);
-    border-right: 5px solid var(--color-orange);
 }
 
 .detail-panel.opened {
@@ -198,16 +197,13 @@ button {
     -webkit-tap-highlight-color: transparent;
 }
 
-.debug {
+.home {
     display: flex;
-    flex-direction: column;
-}
-
-.debug button {
-    border: none;
+    float: right;
     background-color: white;
-    padding: 1rem;
-    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
 
 .indexLogo {
