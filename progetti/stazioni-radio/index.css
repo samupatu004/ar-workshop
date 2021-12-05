@@ -354,7 +354,6 @@ h1 {
 .returnhome {
     color: var(--color-orange);
     border: none;
-    display: flex;
     background-color: white;
     font-size: 2em;
     width: 49%;
