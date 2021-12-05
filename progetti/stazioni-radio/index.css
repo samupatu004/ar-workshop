@@ -18,17 +18,17 @@ button {
 }
 
 .loader {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .loading-text div{
@@ -263,22 +263,22 @@ button {
 }
 
 .indexButton:after {
-  content: "";
-  background-color: var(--color-orange);
-  display: flex;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40vw;
-  height: 9vh;
-  border-radius: 8px;
-  opacity: 0;
-  transition: all 0.8s;
+    content: "";
+    background-color: var(--color-orange);
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    height: 9vh;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all 0.8s;
 }
 
 .indexButton:active:after {
-  opacity: 1;
-  transition: 0s;
+    opacity: 1;
+    transition: 0s;
 }
 
 .modal-window {
@@ -342,16 +342,29 @@ h1 {
 }
 
 .understand {
-  color: var(--color-orange);
-  border: none;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  font-size: 2em;
+    color: var(--color-orange);
+    border: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-size: 2em;
+}
+
+.returnhome {
+    color: var(--color-orange);
+    border: none;
+    display: flex;
+    background-color: white;
+    font-size: 2em;
+    width: 49%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-close > button {
-  border: none;
-  background-color: white;
+    border: none;
+    background-color: white;
 }
