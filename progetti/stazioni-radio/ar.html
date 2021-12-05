@@ -22,9 +22,11 @@
         </div>
     </div>
 
+    <a href="#open-modal" style="text-decoration:none;">
         <button class="home">
             <img src="home.svg" style="width: 80%; z-index: 20; position: absolute;">
         </button>
+    </a>
 
     <a-scene
         device-orientation-permission-ui="enabled: false"
@@ -67,6 +69,24 @@
             <span class="detail-distance"></span>
         </div>
         <div class="detail-description"></div>
+    </div>
+
+
+    <div id="open-modal" class="modal-window">
+            
+        <div>
+            <h1> Ritornare alla pagina iniziale? </h1>
+
+            <div>
+                <a href="#" style="text-decoration: none;">
+                    <button class="understand" style="width:49%; padding: 0; align-items: center; justify-content: center;"> No </button>
+                </a>
+                <a href="index.html" style="text-decoration: none;">
+                    <button class="understand" style=" width: 49%; padding: 0; align-items: center; justify-content: center;"> Sì </button>
+                </a>
+            </div>
+            
+        </div>
     </div>
   </body>
 </html>
