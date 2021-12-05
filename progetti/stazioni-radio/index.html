@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <title> Home Page Stazioni Radio Legnago </title>
 </head>
-    <body style="background-color: #FCAE1E;">
+    <body style="background-color: #FCAE1E; height: 100%;">
         <div class="indexLogo">
             <img src="s13Logo.png" style="width: 100%;">
         </div>
@@ -18,17 +18,35 @@
                 stazioni radio di Legnago con le loro corrispettive distanze. 
                  </p>
         </div>
-        <a href="ar.html" style="text-decoration: none;">
-            <button class="indexButton" > Inizia </button>
+        <a href="#open-modal" style="text-decoration:none;">
+            <button class="indexButton"> Inizia </button>
         </a>
+
+        <div id="open-modal" class="modal-window">
+            
+            <div>
+                <div>
+                    <a href="#" title="Close" class="modal-close"> Chiudi </a>
+                </div>
+                <h1> Prima di iniziare... </h1>
+                <p> 
+                    nella prossima pagina accetta l'utilizzo
+                    della videocamera e della geolocalizzazione,
+                    altrimenti non si potrà accedere alla pagina
+                    e alle sue funzioni.
+                </p>
+                <h1> <a href="ar.html " class="understand"> Ho capito. </a> </h1>
+            </div>
+        </div>
+    
+        <script>
+            // Commento per testo da mettere nel pop up
+            // Titolo: Prima di iniziare...
+            /* nella prossima pagina accetta l'utilizzo
+            della videocamera e della geolocalizzazione,
+            altrimenti non si potrà accedere alla pagina
+            e alle sue funzioni.*/
+            // Pulsante: Ho capito.
+        </script>
     </body>
-    <script>
-        // Commento per testo da mettere nel pop up
-        // Titolo: Prima di iniziare...
-        /* nella prossima pagina accetta l'utilizzo
-        della videocamera e della geolocalizzazione,
-        altrimenti non si potrà accedere alla pagina
-        e alle sue funzioni.*/
-        // Pulsante: Ho capito.
-    </script>
 </html>

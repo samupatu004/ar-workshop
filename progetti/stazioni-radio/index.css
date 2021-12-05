@@ -273,5 +273,75 @@ button {
 
 .indexButton:active:after {
   opacity: 1;
-  transition: 0s
+  transition: 0s;
+}
+
+.modal-window {
+    position: fixed;
+    background-image: linear-gradient(to top, #000000d1 0, #ffffff82 100%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window > div {
+    width: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    padding-bottom: 3.5em;
+    background: white;
+    border: 5px solid var(--color-orange);
+}
+h1 {
+    margin: 0 0 15px;
+    color: var(--color-dark-grey);
+    /* background-image: linear-gradient(to right, #9f9f9f30 0, #00000026 100%); */
+}
+
+.modal-close {
+    color: var(--color-dark-grey);
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: black;
+}
+
+.modal-window > div {
+    border-radius: 1rem;
+}
+
+.modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.understand {
+  color: var(--color-orange);
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  text-decoration: none;
 }
